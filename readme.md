@@ -22,7 +22,7 @@ https://nextjsappname.vercel.app/auth/callback/google
    4. use password of `android`
    5. copy SHA1 into configuration
 
-### Expo[.yarnrc.yml](.yarnrc.yml)
+### Expo
 **.env** (/apps/expo)
 ```
 // change local IP address to your own
