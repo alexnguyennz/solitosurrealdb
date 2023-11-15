@@ -22,7 +22,7 @@ https://nextjsappname.app/auth/callback/google
    4. use password of `android`
    5. copy SHA1 into configuration
 
-### Expo
+### Expo[.yarnrc.yml](.yarnrc.yml)
 **.env** (/apps/expo)
 ```
 // change local IP address to your own
