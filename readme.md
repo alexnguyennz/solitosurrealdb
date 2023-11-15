@@ -11,7 +11,7 @@ https://nextjsappname.vercel.app
 
 // Authorized Redirect URIs
 http://localhost:3000/api/auth/callback/google
-https://nextjsappname.app/auth/callback/google
+https://nextjsappname.vercel.app/auth/callback/google
 ```
 2. Copy client ID and secret for Next.js environment variables
 
