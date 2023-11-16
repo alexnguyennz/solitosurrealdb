@@ -21,6 +21,7 @@ https://nextjsappname.vercel.app/auth/callback/google
 3. cd into `/apps/expo/android` and run `keytool -keystore app/debug.keystore -list -v`
    4. use password of `android`
    5. copy SHA1 into configuration
+4. Add your testing Google account email under "OAuth consent screen" as a test user
 
 ### Expo
 **.env** (/apps/expo)
