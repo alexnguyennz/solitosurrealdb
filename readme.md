@@ -18,7 +18,7 @@ https://nextjsappname.vercel.app/auth/callback/google
 **Android**
 1. Create OAuth Client ID of `Android` type
 2. Copy package name from `/apps/expo/app.json` e.g. `com.anonymous.solitoexporouter` and enter in configuration
-3. cd into `/apps/expo/.android` and run `keytool -keystore app/debug.keystore -list -v`
+3. cd into `/apps/expo/android` and run `keytool -keystore app/debug.keystore -list -v`
    4. use password of `android`
    5. copy SHA1 into configuration
 
