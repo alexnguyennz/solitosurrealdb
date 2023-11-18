@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { createParam } from 'solito'
 import { TextLink } from 'solito/link'
 import { useRouter } from 'solito/router'
-import { useFocusEffect } from 'expo-router'
+import { useFocusEffect, Stack } from 'expo-router'
 
 import { View, P, FlatList } from 'dripsy'
 import { Button, ListRenderItem } from 'react-native'
@@ -75,6 +75,11 @@ export function PostsScreen() {
     <View
       sx={{ flex: 1, justifyContent: 'center', alignItems: 'center', p: 16 }}
     >
+      <Stack.Screen
+        options={{
+          title: `${user?.user?.email?.replace(/^(.*?)@.*$/, '$1')} posts`,
+        }}
+      />
       {user && (
         <>
           <Button

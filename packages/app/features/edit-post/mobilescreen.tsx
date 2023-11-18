@@ -10,6 +10,7 @@ import {
   type User,
 } from '@react-native-google-signin/google-signin'
 import { TextLink } from 'solito/link'
+import { Stack } from 'expo-router'
 
 const { useParam } = createParam<{ id: string }>()
 
@@ -84,6 +85,11 @@ export function EditPostScreen() {
 
   return (
     <View sx={{ flex: 1, justifyContent: 'center', p: 16 }}>
+      <Stack.Screen
+        options={{
+          title: `Edit post ${id}`,
+        }}
+      />
       {user && (
         <Button
           onPress={async () => {

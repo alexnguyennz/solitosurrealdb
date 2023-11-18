@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { TextLink } from 'solito/link'
-import { useFocusEffect } from 'expo-router'
+import { useFocusEffect, Stack } from 'expo-router'
 
 import { Text, View } from 'dripsy'
 
@@ -33,6 +33,7 @@ export function HomeScreen() {
     <View
       sx={{ flex: 1, justifyContent: 'center', alignItems: 'center', p: 16 }}
     >
+      <Stack.Screen options={{ title: 'Home' }} />
       {user ? (
         <>
           <Button onPress={signOut} title="Log out" />

@@ -8,6 +8,7 @@ import {
   GoogleSignin,
   type User,
 } from '@react-native-google-signin/google-signin'
+import { Stack } from 'expo-router'
 
 export function NewPostScreen() {
   const { push, back } = useRouter()
@@ -56,6 +57,11 @@ export function NewPostScreen() {
 
   return (
     <View sx={{ flex: 1, justifyContent: 'center', p: 16 }}>
+      <Stack.Screen
+        options={{
+          title: 'New Post',
+        }}
+      />
       {user && (
         <Button
           onPress={async () => {
