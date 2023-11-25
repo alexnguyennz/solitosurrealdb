@@ -66,55 +66,6 @@ export const authOptions: NextAuthOptions = {
       return token
     }
   }
-  /* events: {
-     async signIn() {
-       console.log('signin event')
-
-       const test = await clientPromise
-
-       // trying to fix
-       await test.invalidate()
-     }
-   }*/
 }
 
 export default NextAuth(authOptions)
-
-
-/*
-await db.connect(`${connectionString}/rpc`, {
-  namespace, database, auth: { username, password }
-})
-
-try {
-
-  const [user] = await db.select(`users:⟨${token.email}⟩`)
-  console.log('user', user)
-
-  if (!user) {
-    const tokens = await db.signup({
-      namespace: 'test',
-      database: 'test',
-      scope: 'account',
-      id: token.email,
-      email: token.email
-    })
-
-    console.log('signed up token', tokens)
-  } else {
-    // signin works with existing email
-    const tokenTest = await db.signin({
-      namespace: 'test',
-      database: 'test',
-      scope: 'account',
-      email: token.email
-    })
-
-    console.log('signin test', tokenTest)
-  }
-
-} catch (err) {
-  console.log('scope err', err)
-}
-
-await db.invalidate()*/
